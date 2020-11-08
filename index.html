@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculate</title>
+</head>
+<body>
+    <table >
+        <!-- ROW 1 -->
+        <tr>
+            <th colspan="5">Calculate</th>
+        </tr>
+                <!-- ROW 2 -->
+
+        <tr>
+            <td class="red">* Required Field</td>
+            <td colspan="2"></td>
+            <td id="without" class="size">Without</td>
+            <td id="b-1" style="text-align: center;"><b>With Future <br> Price</b></td>
+        </tr>
+                <!-- ROW 3 -->
+
+        <tr>
+            <td class="col1">1. Invoice from an associate</td>
+            <td class="col2"><span class="red">*</span> <select onchange="getSelectedInput();" name="" id="symbol">
+                <option value="">Select Currency</option>
+                <option value="£">Great Britain Pound</option>
+                <option value="€">Euro</option>
+                <option value="$">Austrailian Dollar</option>
+                <option value="¥">Japen Yen</option>
+            </select> </td>
+            <td></td>
+            <td class="border"><span class="red">*</span> <span id="symbol_gbp"></span> <input id="britian_pound" type="text" class="autoCalc" required> </td>
+            <td id="b-2" class="border"><span id="symbol_future"></span> <input type="text" id="future_britian_pound"></td>
+        </tr>
+                <!-- ROW 4 -->
+
+        <tr>
+            <td class="col1">2. invoice Client in USD eqiuvalent</td>
+            <td class="col2">&nbsp;&nbsp;&nbsp;<span id="convert"> </span></td>
+            <td class="border"><span class="red">* </span></span><input type="text" id="gpb_usd" class="autoCalc" required></td>
+            <td class=" col1 border">&nbsp; $ <input type="text" id="result"></td>
+            <td id="b-3" class=" col2 border"> $ &nbsp;<input type="text" id="future_result"></td>
+        </tr>
+                <!-- ROW 5 -->
+
+        <tr>
+            <td class="col1">3. New Rate</td>
+            <td></td>
+            <td  class="border"><span class="red">* </span><input type="text" required id="new_rate"></td>
+            <td></td>
+            <td class="X">X</td>
+        </tr>
+                <!-- ROW 6 -->
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="text-align: center;"><button class="btn" onclick="submit();">Submit</button></td>
+            <td></td>
+        </tr>
+
+                <!-- ROW 7 -->
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td class="border">&nbsp; $ </span> <input type="text" id="total"></td>
+            <td id="b-4" class="border"><span id="symbol_total_future"></span><input type="text" id="future_total"></td>
+        </tr>
+                <!-- ROW 8 -->
+
+        <tr>
+            <td>Difference</td>
+            <td></td>
+            <td></td>
+            <td class="border"> &nbsp; $&nbsp; <input type="text" id="difference"></td>
+            <td id="b-5" class="border"><input type="text" value="NIL" id="futute_difference"></td>
+        </tr>
+
+                <!-- ROW 9 -->
+        <tr>
+            <td>100 Invoice</td>
+            <td></td>
+            <td></td>
+            <td class="border"> &nbsp; $&nbsp; <input type="text" id="invoice_100"></td>
+            <td id="b-6" class="border">$ &nbsp;<input type="text" id="future_invoice"></td>
+        </tr>
+        <tr>
+            <th colspan="5" style="background-color: yellow;">Option 1</th>
+        </tr>
+        <tr>
+            <td>100 invoice same rate</td>
+            <td></td>
+            <td></td>
+            <td id="b-7" class="border">&nbsp;$ &nbsp; <input type="text" id="invoice_same"></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div id="disclaimer">
+        <p>Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: 
+            Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: 
+            Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: Disclaimer: 
+        </p>
+
+    </div>
+
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>

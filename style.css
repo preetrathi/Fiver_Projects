@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    margin: 10px auto;
+    border-spacing: 10px;
+}
+table th{
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: orange;
+    
+}
+table td{
+    font-size: 12px;
+}
+.red{
+    font-size: 11px;
+    color: red;
+}
+#without{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.col1{
+    font-weight: bolder;
+}
+.col2{
+    font-weight: normal;
+}
+input{
+    width: 72px;
+    height: 30px;
+    font-size: 10px;
+    padding: 1px;
+    border: none;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+input.result{
+    width: 100% !important;
+    height: 30px !important;
+}
+.size{
+    width: 100px;
+    height: 30px;
+}
+.btn{
+    width: 100%;
+    background-color: yellow;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.X{
+    text-align: center;
+    font-size: 25px;
+}
+#disclaimer{
+    width: 700px;
+    margin: 15px auto;
+    font-size: 12px;
+}
+.border{
+    border: 1px solid gray;
+    padding: 2px;
+    font-size: 10px;
+}
